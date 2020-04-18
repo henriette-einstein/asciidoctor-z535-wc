@@ -1,0 +1,16 @@
+{
+  "name": "asciidoctor-z535-wc",
+  "version": "1.0.0",
+  "description": "ANSI Z535 Web Components",
+  "main": "convert.js",
+  "repository": "https://github.com/henriette-einstein/asciidoctor-z535-wc.git",
+  "author": "Armin Pfarr <arp@henriette-einstein.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@asciidoctor/core": "^2.1.1",
+    "standard": "^14.3.3"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}

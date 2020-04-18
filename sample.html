@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>Asciidoctor x Web Components</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<script type="module" src="./signalpanel.js"></script>
+</head>
+<body class="article">
+<div id="header">
+<h1>Asciidoctor x Web Components</h1>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This time some fancey signalpanels:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_simple_usage">Simple usage</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:danger[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="danger"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:warning[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="warning"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:caution[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="caution"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:notice[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="notice"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:safety[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="safety"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:thisisnotcorrect[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="thisisnotcorrect"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_signalpanel_with_borders">Signalpanel with borders</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:danger-border[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="danger-border"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:warning-border[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="warning-border"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:caution-border[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="caution-border"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:notice-border[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="notice-border"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:safety-border[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="safety-border"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:thisisnotcorrect-border[]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="thisisnotcorrect-border"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_signalpanel_with_color_options">Signalpanel with color options</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Result color=bw</th>
+<th class="tableblock halign-left valign-top">Result color=wb</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:danger[color=bw] signalpanel:danger[color=wb]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="danger"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="danger"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:warning[color=bw] signalpanel:warning[color=wb]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="warning"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="warning"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:caution[color=bw] signalpanel:caution[color=wb]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="caution"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="caution"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:notice[color=bw] signalpanel:notice[color=wb]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="notice"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="notice"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:safety[color=bw] signalpanel:safety[color=wb]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="safety"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="safety"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_signalpanel_with_language_option_de">Signalpanel with language option de</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:danger[lang=de]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="danger" lang="de"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:warning[lang=de]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="warning" lang="de"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:caution[lang=de]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="caution" lang="de"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:notice[lang=de]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="notice" lang="de"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:safety[lang=de]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="safety" lang="de"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_signalpanel_with_language_option_fr">Signalpanel with language option fr</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:danger[lang=fr]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="danger" lang="fr"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:warning[lang=fr]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="warning" lang="fr"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:caution[lang=fr]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="caution" lang="fr"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:notice[lang=fr]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="notice" lang="fr"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:safety[lang=fr]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="safety" lang="fr"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_signalpanel_with_language_option_es">Signalpanel with language option es</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:danger[lang=es]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="danger" lang="es"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:warning[lang=es]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="warning" lang="es"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:caution[lang=es]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="caution" lang="es"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:notice[lang=es]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="notice" lang="es"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>signalpanel:safety[lang=es]</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><x-signalpanel target="safety" lang="es"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_multiple_signalpanels_in_one_line">Multiple Signalpanels in one line</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><x-signalpanel target="danger" <x-signalpanel target="warning" <x-signalpanel target="caution" <x-signalpanel target="notice" <x-signalpanel target="safety"</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-04-18 14:50:24 +0200
+</div>
+</div>
+</body>
+</html>

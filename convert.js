@@ -276,4 +276,4 @@ signalpanel:safety[lang=es]
 == Multiple Signalpanels in one line
 signalpanel:danger[] signalpanel:warning[] signalpanel:caution[] signalpanel:notice[] signalpanel:safety[]
 
-`, { standalone: true, extension_registry: registry, to_file: 'index.html' })
+`, { standalone: true, extension_registry: registry, to_file: 'sample.html' })

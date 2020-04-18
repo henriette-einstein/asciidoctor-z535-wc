@@ -13,6 +13,7 @@ registry.inlineMacro(function () {
     if (opts && opts.style) {
       span += ` style="${opts.style}"`
     }
+    span += '></x-signalpanel>'
     return self.createBlock(parent, 'pass', span).convert()
   })
 })
@@ -276,4 +277,4 @@ signalpanel:safety[lang=es]
 == Multiple Signalpanels in one line
 signalpanel:danger[] signalpanel:warning[] signalpanel:caution[] signalpanel:notice[] signalpanel:safety[]
 
-`, { standalone: true, extension_registry: registry, to_file: 'sample.html' })
+`, { standalone: true, extension_registry: registry, to_file: 'index2.html' })
